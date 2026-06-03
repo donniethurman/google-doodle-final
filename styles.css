@@ -1,0 +1,191 @@
+/* 
+* URL to Google Doodle template
+https://codepen.io/manikoth/pen/NNNBYe.css
+*/
+
+
+* {
+/*   outline: 1px dotted black; */
+}
+
+/* Doodle Stage */
+#stage {
+  background: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 300px;
+  width: 600px;
+  padding: 1rem;
+  postion: relative;
+  overflow: hidden;
+  margin-bottom: -40px;
+  margin-top: 10px;
+}
+
+
+svg {
+  margin: 0;
+  color: white;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+/*   gap: 1rem; */
+  align-items: center;
+  height: auto;
+}
+
+#stage svg {
+  height: 80%;
+  width: auto;
+  flex-shrink: 1;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #637284;
+  background: radial-gradient(circle,rgba(99, 114, 132, 1) 33%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* background castle */
+.castle {
+  background-image: url(https://snipboard.io/3uLBTN.jpg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 10;
+  margin-bottom: 200px;
+}
+
+
+/* uppercase G */
+#uppercase-G {
+  height: 100px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+
+.flower-1 {
+/*   display: none; */
+}
+
+.flower-2 {
+/*   display: none; */
+}
+
+/* first lowercase o */
+.lowercase-o {
+  margin-left: 85px;
+  margin-right: -15px;
+}
+
+
+/* second lowercase o */
+.lowercase-o2 {
+  margin-right: -10px;
+  margin-bottom: 10px;
+/*   width: 165px;
+  height: 165px; */
+}
+
+.knight-hair {
+/*   display: none; */
+}
+
+.knight-mouth {
+/*   display: none; */
+}
+
+/* second g */
+.lowercase-g {
+  width: 189px;
+  height: 248px;
+  margin-bottom: -10px;
+  margin-right: -20px;
+}
+
+.knight {
+  transform: translateY(10px);
+}
+
+.castle {
+  transform: translateY(-8px);
+}
+
+.flower {
+  transform: translateY(18px);
+}
+
+.candy {
+  transform: translateY(4px);
+}
+.flower-2 {
+/*   display: none; */
+}
+/* L - sword */
+.sword {
+  height: 90%;
+  margin-bottom: 50px;
+  margin-right: -20px;
+}
+
+/* e */
+.last-e {
+
+}
+
+#last-leaf {
+  
+}
+
+
+
+
+
+/* code from colin */
+/* DO NOT EDIT BELOW THIS LINE */
+html, body { 
+    height: 100%;
+  }
+  
+  body {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    justify-content: center;
+  }
+  
+  #search {
+    text-align: center;
+  }
+  
+  button {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .5em 1em;
+    text-align: center;
+  }
+  
+  input {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat center right;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border: 1px solid #aaa;
+    display: block;
+    padding: 1em;
+    margin: 2em auto;
+    outline: none;
+    line-height: 2em;
+    width: 80%;
+  }
